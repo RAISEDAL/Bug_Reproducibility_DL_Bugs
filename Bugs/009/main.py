@@ -42,7 +42,6 @@ datagen.fit(train)
 
 train_generator = datagen.flow(train, train_labels, batch_size=8)
 
-
 # # fits the model on batches with real-time data augmentation:
 history = model.fit_generator(generator=train_generator,
                     use_multiprocessing=True,
