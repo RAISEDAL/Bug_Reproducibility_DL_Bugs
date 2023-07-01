@@ -5,7 +5,7 @@ import pandas as pd
 
 
 batch_size = 32
-epochs = 10
+epochs = 2
 alpha = 0.0001
 lambda_ = 0
 h1 = 50
