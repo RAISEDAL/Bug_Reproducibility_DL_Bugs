@@ -1,11 +1,11 @@
 2023-07-01 11:22:12.414071: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-C:\Users\Mehil Shah\Downloads\Bug Reproducibility\Bugs\009\main.py:46: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+C:\Users\XYZ\Downloads\Bug Reproducibility\Bugs\009\main.py:46: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
   history = model.fit_generator(generator=train_generator,
 Epoch 1/5
 2023-07-01 11:22:20.609023: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-C:\Users\Mehil Shah\Downloads\Bug Reproducibility\Bugs\009\main.py:46: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+C:\Users\XYZ\Downloads\Bug Reproducibility\Bugs\009\main.py:46: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
   history = model.fit_generator(generator=train_generator,
 Epoch 1/5
 Exception in thread Thread-1 (_run):
@@ -14,9 +14,9 @@ Traceback (most recent call last):
     self.run()
   File "C:\Users\Mehil Shah\AppData\Local\Programs\Python\Python310\lib\threading.py", line 946, in run
     self._target(*self._args, **self._kwargs)
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\utils\data_utils.py", line 781, in _run
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\utils\data_utils.py", line 781, in _run
     with closing(self.executor_fn(_SHARED_SEQUENCES)) as executor:
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\utils\data_utils.py", line 756, in pool_fn
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\utils\data_utils.py", line 756, in pool_fn
     pool = get_pool_class(True)(
   File "C:\Users\Mehil Shah\AppData\Local\Programs\Python\Python310\lib\multiprocessing\context.py", line 119, in Pool
     return Pool(processes, initializer, initargs, maxtasksperchild,

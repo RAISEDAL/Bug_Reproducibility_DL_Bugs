@@ -2,7 +2,7 @@
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
 Found 979 images belonging to 3 classes.
 Found 171 images belonging to 3 classes.
-C:\Users\Mehil Shah\Downloads\Bug Reproducibility\Bugs\013\main.py:69: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+C:\Users\XYZ\Downloads\Bug Reproducibility\Bugs\013\main.py:69: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
   model.fit_generator(
 Epoch 1/10
 
