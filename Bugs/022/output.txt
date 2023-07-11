@@ -1,17 +1,17 @@
 2023-07-01 11:33:31.269878: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
 Traceback (most recent call last):
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\Bugs\022\main.py", line 40, in <module>
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\Bugs\022\main.py", line 40, in <module>
     apply_gradients(optimizer, grads, model.trainable_variables)
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\Bugs\022\main.py", line 15, in apply_gradients
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\Bugs\022\main.py", line 15, in apply_gradients
     optimizer.apply_gradients(zip(grads, model_vars))
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_experimental\optimizer.py", line 1139, in apply_gradients
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_experimental\optimizer.py", line 1139, in apply_gradients
     grads_and_vars = self.aggregate_gradients(grads_and_vars)
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_experimental\optimizer.py", line 1105, in aggregate_gradients
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_experimental\optimizer.py", line 1105, in aggregate_gradients
     return optimizer_utils.all_reduce_sum_gradients(grads_and_vars)
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_v2\utils.py", line 33, in all_reduce_sum_gradients
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_v2\utils.py", line 33, in all_reduce_sum_gradients
     filtered_grads_and_vars = filter_empty_gradients(grads_and_vars)
-  File "C:\Users\Mehil Shah\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_v2\utils.py", line 77, in filter_empty_gradients
+  File "C:\Users\XYZ\Downloads\Bug Reproducibility\venv\lib\site-packages\keras\optimizers\optimizer_v2\utils.py", line 77, in filter_empty_gradients
     raise ValueError(
 ValueError: No gradients provided for any variable: (['dense/kernel:0', 'dense/bias:0', 'dense_1/kernel:0', 'dense_1/bias:0', 'dense_2/kernel:0', 'dense_2/bias:0'],). Provided `grads_and_vars` is ((None, <tf.Variable 'dense/kernel:0' shape=(1, 64) dtype=float32, numpy=
 array([[ 0.05271447,  0.24639046, -0.12337501,  0.24857861,  0.19662684,
