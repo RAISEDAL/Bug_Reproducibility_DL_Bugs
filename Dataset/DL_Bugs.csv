@@ -1,0 +1,252 @@
+Links,Title,Tags,Id,Type
+https://stackoverflow.com/questions/65918888,Mixture parameters from a TensorFlow Probability mixture density network,<python><tensorflow><neural-network><mixture-model>,65918888,model
+https://stackoverflow.com/questions/63478947,Correct Way to Fine-Tune/Train HuggingFace's Model from scratch (PyTorch),<python><pytorch><bert-language-model><huggingface-transformers>,63478947,model
+https://stackoverflow.com/questions/67356013,Multiple Activation Functions for multiple Layers (Neural Networks),<tensorflow><neural-network><multiclass-classification><activation-function><relu>,67356013,model
+https://stackoverflow.com/questions/65228352,Matrix inverse approximation with keras dense model,<python><matrix><keras><neural-network><multi-layer>,65228352,model
+https://stackoverflow.com/questions/72489570,Getting random output every time on running Next Sentence Prediction code using BERT,<nlp><pytorch><huggingface-transformers><bert-language-model><attention-model>,72489570,model
+https://stackoverflow.com/questions/75237257,What is the purpose of having the same input and output in PyTorch nn.Linear function?,<machine-learning><pytorch><neural-network><autoencoder><activation-function>,75237257,model
+https://stackoverflow.com/questions/66762815,Why is 32768 used as a constant to normalize the wav data in VGGish?,<tensorflow><normalization><tensorflow-model-garden>,66762815,model
+https://stackoverflow.com/questions/74843740,load_state_dict() missing 1 required positional argument: 'state_dict',<pytorch><model><load>,74843740,model
+https://stackoverflow.com/questions/66821321,BERT: Weights of input embeddings as part of the Masked Language Model,<nlp><pytorch><bert-language-model><transformer-model><language-model>,66821321,model
+https://stackoverflow.com/questions/67102278,"expected ndim=3, found ndim=4. when using K.function() in keras backend to get intermediate layers in a model",<keras><nlp><text-classification><keras-layer>,67102278,model
+https://stackoverflow.com/questions/67120386,Keras LSTM error - Logits and labels should have the same shape,<python><keras><classification><lstm><keras-layer>,67120386,model
+https://stackoverflow.com/questions/67738193,What is the difference between TFHub and Model Garden?,<tensorflow><pre-trained-model><tensorflow-hub>,67738193,model
+https://stackoverflow.com/questions/74977873,the evaluation section leds to bug,<tensorflow><google-colaboratory><transformer-model>,74977873,model
+https://stackoverflow.com/questions/68152276,Using roberta model cannot define the model .compile or summary,<python><keras><deep-learning><bert-language-model><roberta-language-model>,68152276,model
+https://stackoverflow.com/questions/73102541,Accessing a specific layer in a pretrained model in PyTorch,<python><deep-learning><pytorch><pre-trained-model>,73102541,model
+https://stackoverflow.com/questions/72775559,resize_token_embeddings on the a pertrained model with different embedding size,<pytorch><huggingface-transformers><bert-language-model><word-embedding><huggingface-tokenizers>,72775559,model
+https://stackoverflow.com/questions/64659643,"colab_utils.annotate(), annotation format",<tensorflow><deep-learning><google-colaboratory><tensorflow-model-garden>,64659643,model
+https://stackoverflow.com/questions/65676389,Huggingface TFBertForSequenceClassification always predicts the same label,<python><tensorflow><bert-language-model><huggingface-transformers>,65676389,model
+https://stackoverflow.com/questions/65626938,locally connected layer on the columns of an input matrix using keras in python,<python><keras><neural-network><keras-layer>,65626938,model
+https://stackoverflow.com/questions/63721972,network values goes to 0 by linear layers,<deep-learning><pytorch><attention-model>,63721972,model
+https://stackoverflow.com/questions/75491528,What does the embedding elements stand for in huggingFace bert model?,<tensorflow><nlp><huggingface-transformers><bert-language-model><word-embedding>,75491528,model
+https://stackoverflow.com/questions/74473271,AttributeError: 'numpy.float64' object has no attribute 'cpu',<python><pytorch><bert-language-model>,74473271,model
+https://stackoverflow.com/questions/64873640,Retrieve input values after passing to hidden layer in every epoch by using autoencoder,<keras><deep-learning><keras-layer><tf.keras><autoencoder>,64873640,model
+https://stackoverflow.com/questions/74561274,"ValueError: `decode_predictions` expects a batch of predictions (i.e. a 2D array of shape (samples, 1000)). Found array with shape: (1, 26)",<python><machine-learning><keras><conv-neural-network><pre-trained-model>,74561274,model
+https://stackoverflow.com/questions/74595449,Calculating embedding overload problems with BERT,<python><pytorch><nlp><bert-language-model><embedding>,74595449,model
+https://stackoverflow.com/questions/70886218,Torchscript/C++ jit::trace model - Accessing layers parameters,<c++><parameters><pytorch><layer><torchscript>,70886218,model
+https://stackoverflow.com/questions/72845812,"bert-base-uncased: TypeError: tuple indices must be integers or slices, not tuple",<python><machine-learning><pytorch><huggingface-transformers><bert-language-model>,72845812,model
+https://stackoverflow.com/questions/66615069,Keras layers.pop() is not removing layer,<keras><neural-network><conv-neural-network><pre-trained-model>,66615069,model
+https://stackoverflow.com/questions/75360974,'tuple' object does not support item assignment in torch.cat(),<python><pytorch><torch><bert-language-model>,75360974,model
+https://stackoverflow.com/questions/69169595,Should feature embeddings be taken before or after dropout layer in neural network?,<tensorflow><neural-network><embedding><bert-language-model><dropout>,69169595,model
+https://stackoverflow.com/questions/69704467,Concatenate layer shape error in sequence2sequence model with Keras attention,<python><keras><nlp><attention-model><sequence-to-sequence>,69704467,model
+https://stackoverflow.com/questions/67149857,Cannot parse file error while .pb file to tflite conversion,<tensorflow><tensorflow-lite><bert-language-model>,67149857,model
+https://stackoverflow.com/questions/67669509,"Segmentation fault while ""from object_detection import model_lib_v2""",<python><tensorflow><protocol-buffers><tensorflow2.0><tensorflow-model-garden>,67669509,model
+https://stackoverflow.com/questions/62810922,Loading pre trained Attention model in keras custom_objects,<python><keras><pre-trained-model><attention-model>,62810922,model
+https://stackoverflow.com/questions/75952814,Can't add random noise to weights inside a Keras Layer,<python><tf.keras><keras-layer>,75952814,model
+https://stackoverflow.com/questions/66678360,Pytorch Siamese NN with BERT for sentence matching,<python><neural-network><pytorch><bert-language-model><siamese-network>,66678360,model
+https://stackoverflow.com/questions/68732271,RuntimeError: CUDA error: device-side assert triggered - BART model,<pytorch><huggingface-transformers><language-model>,68732271,model
+https://stackoverflow.com/questions/72206004,Error using MultiWorkerMirroredStrategy to train object detection research model ssd_mobilenet_v1_fpn_640x640_coco17_tpu-8,<python-3.x><tensorflow><distributed-computing><tensorflow-model-garden>,72206004,model
+https://stackoverflow.com/questions/76217513,Store intermediate values of pytorch module,<pytorch><hook><transformer-model><self-attention>,76217513,model
+https://stackoverflow.com/questions/63657679,Why W_q matrix in torch.nn.MultiheadAttention is quadratic,<deep-learning><nlp><pytorch><torch><attention-model>,63657679,model
+https://stackoverflow.com/questions/68383634,CUDA error: CUBLAS_STATUS_INVALID_VALUE error when training BERT model using HuggingFace,<python><pytorch><sentiment-analysis><bert-language-model>,68383634,model
+https://stackoverflow.com/questions/73566914,Keras Resizing layer not accepting different sized images as input,<machine-learning><keras><keras-layer>,73566914,model
+https://stackoverflow.com/questions/65529156,Huggingface Transformer - GPT2 resume training from saved checkpoint,<python><pytorch><huggingface-transformers><language-model><gpt-2>,65529156,model
+https://stackoverflow.com/questions/69501047,"Tensorflow: access to see the layer activation (fine-tuning),",<tensorflow><conv-neural-network><activation-function><fine-tune>,69501047,model
+https://stackoverflow.com/questions/69856661,Module 'dateutil' has no attribute 'parser' - Dateutil - Python,<python><tensorflow><deep-learning><model>,69856661,model
+https://stackoverflow.com/questions/75235943,The function for tensor value generates this Error: 'false_fn' must be callable,<python><tensorflow><autoencoder><activation-function><relu>,75235943,model
+https://stackoverflow.com/questions/75727749,fitting a model perfectly using jax in machine learning,<numpy><machine-learning><pytorch><model-fitting><jax>,75727749,model
+https://stackoverflow.com/questions/67597878,I want to add one-to-one layer to deep learning with keras,<python><keras><deep-learning><layer>,67597878,model
+https://stackoverflow.com/questions/66480091,Dimension does not match when using `keras.Model.fit` in `BERT` of tensorflow,<tensorflow><nlp><tensorflow-datasets><bert-language-model><tensorflow-data-validation>,66480091,model
+https://stackoverflow.com/questions/65262928,Query padding mask and key padding mask in Transformer encoder,<python><pytorch><transformer-model><attention-model>,65262928,model
+https://stackoverflow.com/questions/69693177,"Model Created With Pytorch's *list, .children(), and nn.sequential Produces Different Output Tensors",<python><machine-learning><pytorch><pre-trained-model><pytorch-lightning>,69693177,model
+https://stackoverflow.com/questions/67887078,Deeplabv3 re-train result is skewed for non-square images,<python><tensorflow><deeplab><tensorflow-model-garden>,67887078,model
+https://stackoverflow.com/questions/65023526,RuntimeError: The size of tensor a (4000) must match the size of tensor b (512) at non-singleton dimension 1,<python><deep-learning><pytorch><bert-language-model><huggingface-transformers>,65023526,model
+https://stackoverflow.com/questions/67924216,Why would a Torchscript trace return different looking encoded_inputs compared to the original Transformer model?,<pytorch><huggingface-transformers><transformer-model><machine-translation><torchscript>,67924216,model
+https://stackoverflow.com/questions/65424676,"Pytorch's nn.TransformerEncoder ""src_key_padding_mask"" not functioning as expected",<python><nlp><pytorch><transformer-model>,65424676,model
+https://stackoverflow.com/questions/68797901,Training an Transformer Encoder layer directly and the proper way to pad sequences,<deep-learning><pytorch><transformer-model>,68797901,model
+https://stackoverflow.com/questions/66720543,Pytorch 1D tensors expected but got 2D tensors,<python><machine-learning><neural-network><pytorch><tensor>,66720543,tensor
+https://stackoverflow.com/questions/70953355,"Create a tensorflow dataset based on a ""multi-input""",<python><numpy><tensorflow><tensor><tensorflow-datasets>,70953355,tensor
+https://stackoverflow.com/questions/71846576,Pytorch dot product across rows from different arrays,<python><pytorch><matrix-multiplication><tensor>,71846576,tensor
+https://stackoverflow.com/questions/74895166,Confusion matrix: ValueError: Classification metrics can't handle a mix of multiclass and continuous-multioutput targets,<python><tensorflow><scikit-learn><tensor><confusion-matrix>,74895166,tensor
+https://stackoverflow.com/questions/65925629,2-D Vectorized Function with pytorch,<python><pytorch><vectorization><tensor>,65925629,tensor
+https://stackoverflow.com/questions/69269890,Keras: AttributeError: 'Sequential' object has no attribute '_nested_inputs',<python><machine-learning><keras><deep-learning><tensor>,69269890,tensor
+https://stackoverflow.com/questions/63119904,Can I transfer a Tensorflow.js Tensor efficiently between Node.js processes?,<javascript><node.js><tensor><tensorflow.js>,63119904,tensor
+https://stackoverflow.com/questions/66482542,Converting 1D tensor into a 1D array using Fastai,<python><arrays><numpy><pytorch><tensor>,66482542,tensor
+https://stackoverflow.com/questions/70046799,Calling a custom module in pythorch with two parameters,<python><pytorch><tensor>,70046799,tensor
+https://stackoverflow.com/questions/76434294,"Pytorch-Scarf package RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu",<python><deep-learning><pytorch><runtime-error><tensor>,76434294,tensor
+https://stackoverflow.com/questions/68919179,Does packing BooleanTensor's to ByteTensor's affect training of LSTM (or other ML models)?,<memory><pytorch><tensor>,68919179,tensor
+https://stackoverflow.com/questions/74918911,Taking two tensors and combining them with proper 'index-skipping' to create a third tensor in PyTorch,<python><machine-learning><deep-learning><pytorch><tensor>,74918911,tensor
+https://stackoverflow.com/questions/69108022,"Error when checking : expected input_1 to have 4 dimension(s), but got array with shape [320,240,3] in react native",<react-native><tensorflow><machine-learning><tensor><tensorflow.js>,69108022,tensor
+https://stackoverflow.com/questions/67327630,Pytorch: smarter way to reduce dimension by reshape,<python><deep-learning><pytorch><conv-neural-network><tensor>,67327630,tensor
+https://stackoverflow.com/questions/75250628,While coding a GAN and I encountered an error saying `'NoneType' object is not callable`. Please explain this error and some possible solutions?,<deep-learning><pytorch><tensor><generative-adversarial-network><pytorch-dataloader>,75250628,tensor
+https://stackoverflow.com/questions/71168398,Tensorflow gives 0 results,<python><tensorflow><tensor>,71168398,tensor
+https://stackoverflow.com/questions/63910283,Why there are orders of magnitude in the evaluation of torch.sin() and numpy.sin() at integer multiples of Pi?,<python><numpy><pytorch><precision><tensor>,63910283,tensor
+https://stackoverflow.com/questions/68991983,"Using loops, tf.Variable, tf.tensorarray inside a tf.function function in tensorflow",<python><tensorflow><tensor>,68991983,tensor
+https://stackoverflow.com/questions/70799782,Creating a new tensor according to a list of lengths,<pytorch><tensor>,70799782,tensor
+https://stackoverflow.com/questions/75412979,shuffling the contents of Tensor,<tensorflow><tensor>,75412979,tensor
+https://stackoverflow.com/questions/67196226,Remove rows from tensor by matching,<python><pytorch><tensor>,67196226,tensor
+https://stackoverflow.com/questions/74773224,Selective meshgrid in Tensorflow,<python><tensorflow><tensorflow2.0><tensor>,74773224,tensor
+https://stackoverflow.com/questions/65145069,Efficiently filling torch.Tensor at equal index positions,<python><machine-learning><pytorch><tensor>,65145069,tensor
+https://stackoverflow.com/questions/73874919,Update tensor indices with provided values for batches,<tensorflow><tensor>,73874919,tensor
+https://stackoverflow.com/questions/62875960,"Pytorch: multiply two high dimensions tensor, (2, 5, 3) * (2, 5) into (2, 5, 3)",<python><pytorch><tensor>,62875960,tensor
+https://stackoverflow.com/questions/70591345,tensorflow add 'None' dimension to a tensor,<python><tensorflow><tensorflow2.0><tensor>,70591345,tensor
+https://stackoverflow.com/questions/67104280,Where I can find an intuitive explanation of PyTorch's Tensor.unfold() being used to get image patches?,<python><pytorch><tensor><unfold>,67104280,tensor
+https://stackoverflow.com/questions/72689843,generate 1D tensor as unique index of rows of an 2D tensor (keeping the order and the original index),<python><pytorch><tensor><torch>,72689843,tensor
+https://stackoverflow.com/questions/73242380,Use torch.gather to select images from tensor,<python><pytorch><tensor><torch>,73242380,tensor
+https://stackoverflow.com/questions/66831691,What is tensor Rank?,<python><tensorflow><tensor>,66831691,tensor
+https://stackoverflow.com/questions/64770250,"Input Complex number for tensorflow,keras",<python><keras><tensor>,64770250,tensor
+https://stackoverflow.com/questions/68413687,"batched tensor slice, slice B x N x M with B x 1",<numpy><pytorch><slice><tensor><numpy-slicing>,68413687,tensor
+https://stackoverflow.com/questions/70780369,ValueError: only one element tensors can be converted to Python scalars when converting list to float Torch tensor,<python><pytorch><tensor>,70780369,tensor
+https://stackoverflow.com/questions/69797614,Indexing a tensor with None in PyTorch,<indexing><syntax><pytorch><tensor>,69797614,tensor
+https://stackoverflow.com/questions/74423476,Appending zero rows to a 2D Tensor in PyTorch,<python><pytorch><tensor><zero-padding>,74423476,tensor
+https://stackoverflow.com/questions/72427902,Copy tensor elements of certain indices in PyTorch,<machine-learning><pytorch><tensor><torch><indices>,72427902,tensor
+https://stackoverflow.com/questions/68166721,CUDA error: device-side assert triggered on Colab,<pytorch><google-colaboratory><tensor>,68166721,tensor
+https://stackoverflow.com/questions/73676912,iterating over/broadcast_to tensorflow tensors,<python><loops><tensorflow><iteration><tensor>,73676912,tensor
+https://stackoverflow.com/questions/71652014,matmul to every row in pytorch tensor,<python><pytorch><tensor>,71652014,tensor
+https://stackoverflow.com/questions/63977774,Understanding behavior of index_put in PyTorch,<python><pytorch><tensor>,63977774,tensor
+https://stackoverflow.com/questions/69641790,''Boolean value of Tensor with more than one value is ambiguous'' when broadcasting torch Tensor,<python><pytorch><tensor><broadcast>,69641790,tensor
+https://stackoverflow.com/questions/64913854,Loading n-dimensional tensor for pytorch from text file,<python><numpy><pytorch><tensor>,64913854,tensor
+https://stackoverflow.com/questions/69990831,Reshape tensor in custom order (PyTorch),<python><pytorch><reshape><tensor>,69990831,tensor
+https://stackoverflow.com/questions/67387383,numpy equivalent code of unsqueeze and expand from torch tensor method,<python><numpy><pytorch><tensor><torch>,67387383,tensor
+https://stackoverflow.com/questions/64425696,Equivalent of np.resize in TensorFlow,<tensorflow><tensor>,64425696,tensor
+https://stackoverflow.com/questions/75316969,TensorFlow dataset with multi-dimensional Tensors from a CSV file,<tensorflow><tensor><tensorflow-datasets>,75316969,tensor
+https://stackoverflow.com/questions/73380378,What's the fastest way to slice a portion of a tensor to another in PyTorch?,<python><pytorch><slice><tensor>,73380378,tensor
+https://stackoverflow.com/questions/66783542,Why a.storage() is b.storage() returns false when a and b reference the same data?,<python><pytorch><tensor>,66783542,tensor
+https://stackoverflow.com/questions/63415216,List of 2d Tensors to one 3d Tensor,<python><tensorflow><tensor><conv-neural-network><word-embedding>,63415216,tensor
+https://stackoverflow.com/questions/65013313,Create a tensor with ones where another tensor has non-zero elements in Pytorch,<python><pytorch><tensor><torch>,65013313,tensor
+https://stackoverflow.com/questions/73559948,Perform image transformations on batches of images in tensorflow,<python><tensorflow><tensor>,73559948,tensor
+https://stackoverflow.com/questions/71187415,Pytorch tensor changing colors,<pytorch><tensor>,71187415,tensor
+https://stackoverflow.com/questions/66363241,Is there a good way to modify some values in a pytorch tensor while preserving the autograd functionality?,<python><pytorch><tensor>,66363241,tensor
+https://stackoverflow.com/questions/64444616,PyTorch: Perform add/sub/mul operations using 1-D tensor and multi-channel (3-D) image tensor,<python><pytorch><tensor>,64444616,tensor
+https://stackoverflow.com/questions/74248099,Tensor repeat for image patches,<python><pytorch><tensor>,74248099,tensor
+https://stackoverflow.com/questions/68518616,"What does tensorflow tf.keras.input ""tensor"" parameter do?",<tensorflow><tensor>,68518616,tensor
+https://stackoverflow.com/questions/69067391,Expected object of scalar type Long but got scalar type Int for argument #2 in loss function,<python><pytorch><tensor>,69067391,tensor
+https://stackoverflow.com/questions/68382874,Reduce dimensions of a tensor (to a scalar),<python><pytorch><tensor><backpropagation>,68382874,tensor
+https://stackoverflow.com/questions/70823447,Element-wise matrix vector multiplication,<pytorch><tensor>,70823447,tensor
+https://stackoverflow.com/questions/67210373,Add 2-D tensor as column of dataframe,<python><pandas><dataframe><pytorch><tensor>,67210373,tensor
+https://stackoverflow.com/questions/66756131,Pytorch random tensor generation with one fix value and rest of random value,<python><random><pytorch><tensor>,66756131,tensor
+https://stackoverflow.com/questions/73716250,What is the correct implementation for rounding a 2D tensor given the rounding values in a 1D tensor?,<python><pytorch><rounding><tensor>,73716250,tensor
+https://stackoverflow.com/questions/66900676,Select specific indexes of 3D Pytorch Tensor using a 1D long tensor that represents indexes,<python><pytorch><tensor>,66900676,tensor
+https://stackoverflow.com/questions/66472843,What does mean Python inputs incompatible with input_signature,<python><tensorflow2.0><tensor>,66472843,tensor
+https://stackoverflow.com/questions/68220457,To calculate euclidean distance between vectors in a torch tensor with multiple dimensions,<pytorch><tensor>,68220457,tensor
+https://stackoverflow.com/questions/62949148,Pytorch convert a pd.DataFrame which is variable length sequence to tensor,<python><pandas><pytorch><tensor>,62949148,tensor
+https://stackoverflow.com/questions/70373342,Error with tensorflow map_fn. Unable to specify output signature,<python><tensorflow><tensorflow2.0><tensor><ragged-tensors>,70373342,tensor
+https://stackoverflow.com/questions/66489810,Pytorch: split a tensor by column,<python><pytorch><tensor>,66489810,tensor
+https://stackoverflow.com/questions/75504084,Select multiple indices in an axis of pytorch tensor,<python><multidimensional-array><pytorch><tensor>,75504084,tensor
+https://stackoverflow.com/questions/72099844,mat1 and mat2 shapes cannot be multiplied (19x1 and 19x1),<python><deep-learning><pytorch><tensor>,72099844,tensor
+https://stackoverflow.com/questions/65517572,Create a knn adjacent matrix in Pytorch,<matrix><indexing><pytorch><tensor>,65517572,tensor
+https://stackoverflow.com/questions/70885777,"Run out of memory trying to create a tensor of size [2191, 512] with pytorch to save data from movie frames using CLIP",<python><memory><pytorch><tensor><clip>,70885777,tensor
+https://stackoverflow.com/questions/74029376,Tensorflow custom reduction function with axis support,<python><tensorflow><reduce><tensor>,74029376,tensor
+https://stackoverflow.com/questions/70190336,Tensorflow: ZeroDivisionError during concat of singel elements of tensor,<python><tensorflow><tensor><tensorflow2.x>,70190336,tensor
+https://stackoverflow.com/questions/74729268,Replicate operation tensor operation using `torch.tensordot()` and `torch.stack()`,<python><matrix><pytorch><tensor><tensordot>,74729268,tensor
+https://stackoverflow.com/questions/69757350,PIL to numpy and PIL to tensor is different,<numpy><pytorch><python-imaging-library><tensor>,69757350,tensor
+https://stackoverflow.com/questions/69222905,"Split image array and labels dataframe into train, test and validataion sets",<keras><computer-vision><conv-neural-network><tensor>,69222905,tensor
+https://stackoverflow.com/questions/64195225,Extracting blocks from block diagonal PyTorch tensor,<python><pytorch><tensor><diagonal>,64195225,tensor
+https://stackoverflow.com/questions/74265925,Append or combine column wise torch tensors of different shapes,<python><pytorch><tensor>,74265925,tensor
+https://stackoverflow.com/questions/76015848,Pytorch Mapping One Hot Tensor to max of input tensor,<numpy><pytorch><tensor>,76015848,tensor
+https://stackoverflow.com/questions/74021486,Why is the mse as a loss different from the mse as a metric in keras?,<keras><metrics><loss><mse>,74021486,training
+https://stackoverflow.com/questions/63561584,Bayesian Optimisation via HParams and Tensorboard,<python><tensorflow><tensorboard><hyperparameters>,63561584,training
+https://stackoverflow.com/questions/70368698,Irreproducible results Tensorflow,<tensorflow><initialization>,70368698,training
+https://stackoverflow.com/questions/65409620,Calculating gradient from network output in PyTorch gives error,<python><pytorch><loss-function>,65409620,training
+https://stackoverflow.com/questions/72274562,MSELoss from Pytorch,<python><pytorch><runtime><loss-function><mse>,72274562,training
+https://stackoverflow.com/questions/63915186,Is that normal to train properly with 2 sets and/or 2 diff losses function?,<python><pytorch><loss-function>,63915186,training
+https://stackoverflow.com/questions/67682106,Compare two segmentation maps predictions,<deep-learning><computer-vision><pytorch><image-segmentation><loss-function>,67682106,training
+https://stackoverflow.com/questions/75489012,Apply Torchvision Transforms to a numpy array,<pytorch><conv-neural-network><torchvision><data-augmentation>,75489012,training
+https://stackoverflow.com/questions/63997404,Is it possible to train a neural netowrk using a loss function on unseen data (data different from input data)?,<neural-network><pytorch><loss-function>,63997404,training
+https://stackoverflow.com/questions/67226701,The loss value does not decrease,<python><neural-network><pytorch><loss-function>,67226701,training
+https://stackoverflow.com/questions/63043722,MSE with predictions not expected,<deep-learning><pytorch><loss-function><mse>,63043722,training
+https://stackoverflow.com/questions/71638519,Tensor error using DiffAugment for data augmentation in my own dataset . data efficient gans,<python-3.x><tensorflow><generative-adversarial-network><data-augmentation>,71638519,training
+https://stackoverflow.com/questions/75356240,separation of training data pyTorch,<python><pytorch><artificial-intelligence><training-data>,75356240,training
+https://stackoverflow.com/questions/63706825,Implication of binary cross entropy loss value in Keras?,<keras><loss>,63706825,training
+https://stackoverflow.com/questions/65200697,Tensorflow Custom Regularization Term comparing the Prediction to the True value,<python><tensorflow><machine-learning><conv-neural-network><loss-function>,65200697,training
+https://stackoverflow.com/questions/64271628,"""loss : nan"" in training of ""convolution 1D"" neural Network for tabular data",<keras><neural-network><loss-function><conv-neural-network><multiclass-classification>,64271628,training
+https://stackoverflow.com/questions/73619180,Scipy minimize.optimize LBFGS vs PyTorch LBFGS,<python><optimization><scipy><pytorch>,73619180,training
+https://stackoverflow.com/questions/66818548,"Trouble implementing ""concurrent"" softmax function from paper (PyTorch)",<python><pytorch><normalization><loss-function><softmax>,66818548,training
+https://stackoverflow.com/questions/63856270,Pytorch - Should 'CenterCrop' be used to test set? Does this count as cheating？,<image-processing><computer-vision><pytorch><training-data><data-augmentation>,63856270,training
+https://stackoverflow.com/questions/73194577,Generalised inner product in TensorFlow,<python><performance><tensorflow>,73194577,training
+https://stackoverflow.com/questions/66157156,Act on condition in custom loss function,<python><tensorflow><deep-learning><neural-network><loss-function>,66157156,training
+https://stackoverflow.com/questions/72284627,Is this custom PyTorch loss function differentiable,<machine-learning><pytorch><gradient><loss>,72284627,training
+https://stackoverflow.com/questions/64780471,Trying to pass custom loss but it will not allow me to. AttributeError: 'float' object has no attribute 'backward',<python><pytorch><loss><custom-training>,64780471,training
+https://stackoverflow.com/questions/72447212,LBFGS Giving Tensor Object not Callable Error when using Optimizer.step,<optimization><pytorch><closures>,72447212,training
+https://stackoverflow.com/questions/67328446,Loss function and batch size in Keras,<keras><tf.keras><loss-function>,67328446,training
+https://stackoverflow.com/questions/65204482,Training loss decrease but accuracy is always 0?,<python><keras><training-data>,65204482,training
+https://stackoverflow.com/questions/67447166,PyTorch backward() on a tensor element affected by nan in other elements,<python><pytorch><nan><autograd>,67447166,training
+https://stackoverflow.com/questions/68290705,Loss function that ignores missing target values in keras for R,<r><keras><lstm><missing-data><loss-function>,68290705,training
+https://stackoverflow.com/questions/66437807,The best loss function and optimizer to use in Keras for malware machine learning?,<python><keras><syntax-error><conv-neural-network><loss-function>,66437807,training
+https://stackoverflow.com/questions/69967363,Scikit learn train_test_split into Pytorch Dataloader,<python><scikit-learn><pytorch><training-data>,69967363,training
+https://stackoverflow.com/questions/74838915,Does my model overfits or underfits based on the learning curves I obtain?,<machine-learning><pytorch><training-data><overfitting-underfitting>,74838915,training
+https://stackoverflow.com/questions/66810555,Pytorch1.6 What is the actual learning rate during training?,<python-3.x><pytorch><learning-rate>,66810555,training
+https://stackoverflow.com/questions/67415771,Custom adaptive loss function with additional dynamic argument in Keras,<keras><loss-function>,67415771,training
+https://stackoverflow.com/questions/71457035,PyTorch NN not training,<python><neural-network><pytorch><training-data>,71457035,training
+https://stackoverflow.com/questions/75251168,BCELoss between logits and labels not working,<pytorch><nlp><loss-function><text-classification><gpt-2>,75251168,training
+https://stackoverflow.com/questions/73659118,Larger batch size cause larger loss,<machine-learning><deep-learning><pytorch><loss><batchsize>,73659118,training
+https://stackoverflow.com/questions/67723652,tqdm notebook - 2 inner bars,<python><pytorch><training-data><tqdm>,67723652,training
+https://stackoverflow.com/questions/62991747,"Memory error while training my model: Unable to allocate 31.9 GiB for an array with shape (3094, 720, 1280, 3) and data type float32",<python><tensorflow><machine-learning><jupyter-notebook><training-data>,62991747,training
+https://stackoverflow.com/questions/62947532,Where exactly does trainable_variables method belong in Tensorflow?,<function><tensorflow><methods><loss>,62947532,training
+https://stackoverflow.com/questions/63508796,tf.compat.v1.train.exponential_decay: global step = 0,<python><tensorflow><deep-learning><learning-rate>,63508796,training
+https://stackoverflow.com/questions/63083555,Binary Crossentropy accuracy of keras model is not changing,<python><machine-learning><keras><loss>,63083555,training
+https://stackoverflow.com/questions/69433514,Test Intel Extension for Pytorch(IPEX) in multiple-choice from huggingface / transformers,<performance><intel><huggingface-transformers><intel-python><intel-pytorch>,69433514,training
+https://stackoverflow.com/questions/65979838,Customized loss function in PyTorch which uses DNN outputs and additional variables,<python-3.x><pytorch><loss-function><dnn9>,65979838,training
+https://stackoverflow.com/questions/62783651,Pytorch: Differentiable counting,<pytorch><mathematical-optimization>,62783651,training
+https://stackoverflow.com/questions/74852665,LSTM: calculating MSELoss in for loop returns NAN when backward pass,<pytorch><lstm><loss><mse>,74852665,training
+https://stackoverflow.com/questions/74754493,plot training and validation loss in pytorch,<validation><plot><pytorch><training-data><mean-square-error>,74754493,training
+https://stackoverflow.com/questions/69123707,Execution of mobilenet v2 for object detection with Tensorflow JS,<javascript><performance><object-detection><tensorflow.js><mobilenet>,69123707,training
+https://stackoverflow.com/questions/63816321,Why Pytorch autograd need another vector to backward instead of computing Jacobian?,<python><optimization><pytorch><backpropagation><automatic-differentiation>,63816321,training
+https://stackoverflow.com/questions/70124398,module 'torch.optim' has no attribute 'NAdam',<python><optimization><pytorch>,70124398,training
+https://stackoverflow.com/questions/67329997,one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [640]] is at version 4;,<python><pytorch><loss-function><distributed-training><adversarial-machines>,67329997,training
+https://stackoverflow.com/questions/71514447,loss increasing significantly in training loop,<python><pytorch><training-data><loss>,71514447,training
+https://stackoverflow.com/questions/65038373,An optimization algorithm,<python><optimization><keras>,65038373,training
+https://stackoverflow.com/questions/75762820,Custom loss function for sports betting,<keras><loss-function><loss>,75762820,training
+https://stackoverflow.com/questions/68929471,Implementing Early Stopping in Pytorch without Torchsample,<python><machine-learning><neural-network><pytorch><loss-function>,68929471,training
+https://stackoverflow.com/questions/70954061,"Miniforge Conda ""PackagesNotFoundError"" on ARM processor for PyTorch",<pytorch><conda><nvidia-jetson><mini-forge>,70954061,gpu
+https://stackoverflow.com/questions/66801280,GPU memory increasing at each batch (PyTorch),<pytorch><out-of-memory><gpu><conv-neural-network><lstm>,66801280,gpu
+https://stackoverflow.com/questions/66677500,Pytorch crashes cuda on wrong line,<python><asynchronous><deep-learning><cuda><pytorch>,66677500,gpu
+https://stackoverflow.com/questions/67701269,Not enough space for drivers in AWS g4dn.4xlarge instance,<amazon-web-services><tensorflow><ubuntu><nvidia><partition>,67701269,gpu
+https://stackoverflow.com/questions/68919590,Why tensor size was not changed?,<python><memory><pytorch><gpu><dtype>,68919590,gpu
+https://stackoverflow.com/questions/63258022,Non-OK-status: GpuLaunchKernel(...) status: Internal: no kernel image is available for execution on the device,<tensorflow><nvidia><cudnn>,63258022,gpu
+https://stackoverflow.com/questions/74904070,Data shuffling changes gpu memory use drastically,<python><deep-learning><pytorch><gpu><classification>,74904070,gpu
+https://stackoverflow.com/questions/67045622,tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_UNKNOWN: unknown error,<python-3.x><gpu><tensorflow2.0><nvidia>,67045622,gpu
+https://stackoverflow.com/questions/73955752,GPU Usage While Training LSTM Model Using Darts,<time-series><gpu><lstm><pytorch-lightning><u8darts>,73955752,gpu
+https://stackoverflow.com/questions/67847219,Using TensorFlow with GPU taking a long time for loading library related to CUDA,<tensorflow><gpu>,67847219,gpu
+https://stackoverflow.com/questions/66132237,Launching the right number of CUDA blocks for a custom PyTorch activation function,<c++><cuda><pytorch><libtorch>,66132237,gpu
+https://stackoverflow.com/questions/71101695,"Failing to compile project using CUDA 11.0, Python 3.8, Torch 1.8",<python><c++><cmake><pytorch><cuda>,71101695,gpu
+https://stackoverflow.com/questions/66493943,"Tensor for argument #2 'mat1' is on CPU, but expected it to be on GPU",<python><debugging><pytorch><gpu><autoencoder>,66493943,gpu
+https://stackoverflow.com/questions/63393465,Problem with run object detect algorithm on GPU (instead of CPU),<python><tensorflow><gpu><object-detection>,63393465,gpu
+https://stackoverflow.com/questions/72534859,Is GradScaler necessary with Mixed precision training with pytorch?,<deep-learning><pytorch><nvidia><apex><torch>,72534859,gpu
+https://stackoverflow.com/questions/73594247,What is the reason for low GPU util when training machine learning model?,<machine-learning><deep-learning><pytorch><gpu><cpu>,73594247,gpu
+https://stackoverflow.com/questions/75049388,AssertionError: Torch not compiled with CUDA MacOS,<macos><machine-learning><pytorch><gpu>,75049388,gpu
+https://stackoverflow.com/questions/69663196,Fine grained Kernel scheduling with MPS,<tensorflow><cuda><nvidia><cuda-context><multi-process-service>,69663196,gpu
+https://stackoverflow.com/questions/72101578,Using String parameter for nvidia triton,<python><tensorflow><nvidia><tfx><tritonserver>,72101578,gpu
+https://stackoverflow.com/questions/74632058,Memory issue in running multiple processes on GPU,<pytorch><cuda><gpu><nvidia><gpgpu>,74632058,gpu
+https://stackoverflow.com/questions/74183243,Cuda.is_available() False on VSCode .ipynb but True on JupyterLab,<python><visual-studio-code><jupyter-notebook><pytorch><gpu>,74183243,gpu
+https://stackoverflow.com/questions/69125887,"Understanding why memory allocation occurs during inference, backpropagation, and model update",<pytorch><gpu>,69125887,gpu
+https://stackoverflow.com/questions/65327247,load pytorch dataloader into GPU,<python><pytorch><gpu><dataloader>,65327247,gpu
+https://stackoverflow.com/questions/63421764,Tensorflow-gpu not detecting GPU?,<python-3.x><tensorflow><gpu>,63421764,gpu
+https://stackoverflow.com/questions/67149912,RuntimeError: CUDA runtime implicit initialization on GPU:0 failed. Status: all CUDA-capable devices are busy or unavailable,<python><tensorflow><gpu><nvidia>,67149912,gpu
+https://stackoverflow.com/questions/65381073,"Tensorflow-GPU not using GPU with CUDA,CUDNN",<python><tensorflow><gpu>,65381073,gpu
+https://stackoverflow.com/questions/69203342,Paramiko SSH connection does not have access to GPU with tensorflow,<python><tensorflow><ssh><gpu><paramiko>,69203342,gpu
+https://stackoverflow.com/questions/70205917,Pytorch Geometric Expected all tensors to be on the same device [demo code not working],<python><pytorch><gpu><pytorch-geometric>,70205917,gpu
+https://stackoverflow.com/questions/68353446,Why python multiprocessing used more CPU and GPU than the specified in-parallel process numbers?,<python><pytorch><multiprocessing><gpu>,68353446,gpu
+https://stackoverflow.com/questions/65599567,Adding custom TensorFlow OP,<c++><tensorflow><ubuntu><cuda><nvcc>,65599567,gpu
+https://stackoverflow.com/questions/65679823,TypeError: expected CPU (got CUDA),<python><pytorch><gpu>,65679823,gpu
+https://stackoverflow.com/questions/63751883,Using GPU inside docker container - CUDA Version: N/A and torch.cuda.is_available returns False,<docker><docker-compose><pytorch><nvidia-docker>,63751883,gpu
+https://stackoverflow.com/questions/71254462,Anaconda Xgboost unable to find GPU,<python><ubuntu><pytorch><anaconda><gpu>,71254462,gpu
+https://stackoverflow.com/questions/65452289,Why is my GPU getting interrupted when training my data?,<python><tensorflow><gpu>,65452289,gpu
+https://stackoverflow.com/questions/69597944,Tensorflow 2.5 exit code -1073740791 when GPU training,<python><tensorflow><gpu><exit-code>,69597944,gpu
+https://stackoverflow.com/questions/66261729,Pytorch Lightning duplicates main script in ddp mode,<pytorch><multi-gpu><ddp><pytorch-lightning>,66261729,gpu
+https://stackoverflow.com/questions/76368146,GPU issues when using Tensorflow2 to train a chatbot,<python><gpu><tensorflow2.0>,76368146,gpu
+https://stackoverflow.com/questions/74806043,"Issues with getting cuda to work on torch, importing torch and cuda modules into Python",<python><pip><pytorch><cuda>,74806043,gpu
+https://stackoverflow.com/questions/65464181,An alternative to tf.distribute.cluster_resolver.TPUClusterResolver( tpu_name) to be used in Sagemaker?,<python><tensorflow><gpu><amazon-sagemaker><tpu>,65464181,gpu
+https://stackoverflow.com/questions/73328868,Parameters can't be updated when using torch.nn.DataParallel to train on multiple GPUs,<python><machine-learning><pytorch><gpu><dataparallel>,73328868,gpu
+https://stackoverflow.com/questions/64472271,tensorflow 2.2 gpu support Windows,<windows><tensorflow><gpu>,64472271,gpu
+https://stackoverflow.com/questions/64362969,Tensorflow 2.3.x cudnn failure Windows 10 CUDA 10.1 CUDNN 7.6.5 Anaconda3,<windows><tensorflow><installation><gpu>,64362969,gpu
+https://stackoverflow.com/questions/73509663,What are the strictly required (bare minimum) libraries/packages to run machine learning with GPU in python3,<python-3.x><tensorflow><nvidia><miniconda><cudnn>,73509663,gpu
+https://stackoverflow.com/questions/74989976,nvidia-smi vs torch.cuda.memory_allocated,<python><pytorch><gpu><nvidia-smi><vram>,74989976,gpu
+https://stackoverflow.com/questions/72090770,Transfer an LSTM model from cpu to GPU,<python><tensorflow><deep-learning><gpu><lstm>,72090770,gpu
+https://stackoverflow.com/questions/64256241,Found no NVIDIA driver on your system error on WSL2 conda environment with Python 3.7,<pytorch><nvidia><wsl-2>,64256241,gpu
+https://stackoverflow.com/questions/62878189,Running GPU on multiple PyTorch tensor operators,<python><pytorch><gpu>,62878189,gpu
+https://stackoverflow.com/questions/76107401,Can we overlap compute operation with memory operation without pinned memory on CPU?,<pytorch><cuda><cuda-streams>,76107401,gpu
+https://stackoverflow.com/questions/69919854,"PyTorch with CUDA and Nvidia card: RuntimeError: CUDA error: all CUDA-capable devices are busy or unavailable, but torch.cuda.is_available() is True",<pytorch><cuda><nvidia>,69919854,gpu
+https://stackoverflow.com/questions/63151525,I cannot understand this AttributeError : module 'tensorflow.python.framework.ops' has no attribute '_TensorLike',<python><tensorflow><attributeerror>,63151525,api
+https://stackoverflow.com/questions/69233691,ValueError: Target size (torch.Size([128])) must be the same as input size (torch.Size([112])),<neural-network><pytorch><conv-neural-network><size><valueerror>,69233691,api
+https://stackoverflow.com/questions/68640222,AttributeError: module 'tensorflow._api.v2.train' has no attribute 'RMSPropOptimizer',<python><tensorflow><google-colaboratory><attributeerror>,68640222,api
+https://stackoverflow.com/questions/75939176,"default_collate: TypeError: batch must contain tensors, numbers, dicts or lists; found <class 'pathlib.PosixPath'> & KeyError: 0",<python-3.x><typeerror><keyerror><dataloader><pytorch-dataloader>,75939176,api
+https://stackoverflow.com/questions/69683898,"PyTorch: Checking Model Accuracy Results in ""TypeError: 'bool' object is not iterable.""",<python><machine-learning><pytorch><attributeerror><pytorch-dataloader>,69683898,api
+https://stackoverflow.com/questions/72035825,TypeError: 'type' object is not subscriptable when importing tensorflow_federated as tff,<tensorflow><typeerror><google-colaboratory><tensorflow-federated>,72035825,api
+https://stackoverflow.com/questions/65161746,Why does a DLL error appear when importing tensorflow?,<python-3.x><tensorflow><pycharm><windows-10><importerror>,65161746,api
+https://stackoverflow.com/questions/74199540,"ValueError: Layer ""model_1"" expects 2 input(s), but it received 1 input tensors",<python><tensorflow><machine-learning><deep-learning><valueerror>,74199540,api
+https://stackoverflow.com/questions/65264224,"TypeError: The added layer must be an instance of class Layer. Found: Tensor(""input_1:0"", shape=(None, 64, 64, 3), dtype=float32) -Python",<python><keras><conv-neural-network><typeerror>,65264224,api
+https://stackoverflow.com/questions/74376277,"Keras Input 0 of layer ""conv2d_1"" is incompatible with the layer: expected min_ndim=4, found ndim=2. Full shape received: (None, 1)",<keras><valueerror>,74376277,api
+https://stackoverflow.com/questions/64576751,Neural Network TypeError: unsupported operand type(s) for +=: 'Dense' and 'str',<python><keras><neural-network><typeerror><relu>,64576751,api
+https://stackoverflow.com/questions/74722815,PyTorch-Lightning error on trainer.predict(),<python><attributeerror><pytorch-lightning>,74722815,api
