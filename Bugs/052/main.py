@@ -1,14 +1,15 @@
 import torch
 import torch.nn as nn
+import random 
 
-input_size = 561
+input_size = random.randint(1, 100)
 output_size = 1
-dropout = 0.3
+dropout = random.choice([0.2, 0.3, 0.4, 0.5])
 batchnorm = True
 loss = 'MSE'
-lr = 0.0002
+lr = 0.001
 num_epochs = 10
-train_features = torch.randn(100, 561)
+train_features = torch.randn(100, input_size)
 train_targets = torch.randn(100, 1)
 criterion = nn.BCEWithLogitsLoss()
 

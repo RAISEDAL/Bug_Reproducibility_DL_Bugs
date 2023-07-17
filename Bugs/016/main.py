@@ -1,11 +1,12 @@
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Conv2D, MaxPooling2D, Dense, Dropout
 import numpy as np
+import random
 
 in_shape = (5, 720)
-number_of_classes = 10 
-batch_size = 32 
-epochs = 10
+number_of_classes = random.randint(1, 10) 
+batch_size = random.choice([32, 64, 128])
+epochs = random.randint(1, 10)
 
 x_train = np.random.random((300, 5, 720))
 y_train = np.random.randint(number_of_classes, size=(300, number_of_classes))

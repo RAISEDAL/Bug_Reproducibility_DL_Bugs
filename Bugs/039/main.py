@@ -42,26 +42,42 @@ def train_model(model, optimizer, train_loader,  num_epochs, criterion = nn.Cros
 
     print('Train Loss: %.3f | Train Accuracy: %.3f'%(train_loss,train_accu))
 
-# Define the CNN architecture
-class Net(nn.Module):
-    def __init__(self):
-        super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3)
-        self.dropout1 = nn.Dropout2d(0.25)
-        self.dropout2 = nn.Dropout2d(0.5)
-        self.fc1 = nn.Linear(64 * 12 * 12, 128)
-        self.fc2 = nn.Linear(128, 10)
+# Model 1
+# class Net(nn.Module):
+#     def __init__(self):
+#         super(Net, self).__init__()
+#         self.conv1 = nn.Conv2d(1, 32, kernel_size=3)
+#         self.conv2 = nn.Conv2d(32, 64, kernel_size=3)
+#         self.dropout1 = nn.Dropout2d(0.25)
+#         self.dropout2 = nn.Dropout2d(0.5)
+#         self.fc1 = nn.Linear(64 * 12 * 12, 128)
+#         self.fc2 = nn.Linear(128, 10)
 
-    def forward(self, x):
-        x = nn.functional.relu(self.conv1(x))
-        x = nn.functional.relu(self.conv2(x))
-        x = nn.functional.max_pool2d(self.dropout1(x), 2)
-        x = torch.flatten(x, 1)
-        x = nn.functional.relu(self.fc1(self.dropout2(x)))
-        x = self.fc2(x)
-        return nn.functional.log_softmax(x, dim=1)
+#     def forward(self, x):
+#         x = nn.functional.relu(self.conv1(x))
+#         x = nn.functional.relu(self.conv2(x))
+#         x = nn.functional.max_pool2d(self.dropout1(x), 2)
+#         x = torch.flatten(x, 1)
+#         x = nn.functional.relu(self.fc1(self.dropout2(x)))
+#         x = self.fc2(x)
+#         return nn.functional.log_softmax(x, dim=1)
 
+# Model 2
+# class Net(nn.Module):
+#     def __init__(self):
+#         super(Net, self).__init__()
+#         self.flatten = nn.Flatten()
+#         self.fc1 = nn.Linear(28*28, 128)
+#         self.relu = nn.ReLU()
+#         self.fc2 = nn.Linear(128, 10)
+    
+#     def forward(self, x):
+#         x = self.flatten(x)
+#         x = self.fc1(x)
+#         x = self.relu(x)
+#         x = self.fc2(x)
+#         return x
+  
 # Define the data transformations
 transform = transforms.Compose([
     transforms.ToTensor(),

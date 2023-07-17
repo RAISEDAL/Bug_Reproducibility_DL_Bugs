@@ -5,10 +5,11 @@ from keras.layers import Dense
 from keras.layers import Activation
 from keras.layers import Dropout
 from keras.optimizers import RMSprop
+import random
 
 (x_tr, y_tr), (x_te, y_te) = mnist.load_data()
 print (x_tr.shape)
-batch_size = 128
+batch_size = random.choice([32, 64, 128])
 
 X_train = numpy.array([[1] * 128] * (10 ** 4) + [[0] * 128] * (10 ** 4))
 X_test = numpy.array([[1] * 128] * (10 ** 2) + [[0] * 128] * (10 ** 2))
