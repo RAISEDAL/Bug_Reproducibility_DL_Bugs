@@ -3,9 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from tqdm import tqdm
+import random
 
 train_data = torch.utils.data.TensorDataset(torch.randint(0, 200, (1000, 80)), torch.randint(1, 3, (1000,)))
-author_dataloader = torch.utils.data.DataLoader(train_data, batch_size=32, shuffle=True)
+author_dataloader = torch.utils.data.DataLoader(train_data, batch_size=random.choice([32, 64, 128]), shuffle=True)
 
 class Model(nn.Module):
     def __init__(self, tokenize_vocab_count):

@@ -2,18 +2,35 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class TransitionLayer(nn.Module):
-  bn = None
-  relu = None
-  conv = None
-  droprate = None
+# Layer Version 1
+# class TransitionLayer(nn.Module):
+#   bn = None
+#   relu = None
+#   conv = None
+#   droprate = None
 
-  def __init__(self, in_size, out_size, drop_rate):
-    super(TransitionLayer, self).__init__()
-    self.bn = nn.BatchNorm2d(in_size)
-    self.relu = nn.ReLU(inplace=True)
-    self.conv = nn.ConvTranspose2d(in_size, out_size, kernel_size=1, stride=1, padding=0, bias=False)
-    self.droprate = drop_rate
+#   def __init__(self, in_size, out_size, drop_rate):
+#     super(TransitionLayer, self).__init__()
+#     self.bn = nn.BatchNorm2d(in_size)
+#     self.relu = nn.ReLU(inplace=True)
+#     self.conv = nn.ConvTranspose2d(in_size, out_size, kernel_size=1, stride=1, padding=0, bias=False)
+#     self.droprate = drop_rate
+
+# Layer Version 2
+# class TransitionLayer(nn.Module):
+#     def __init__(self, in_size, out_size, drop_rate):
+#         super(TransitionLayer, self).__init__()
+#         self.batch_norm = nn.BatchNorm2d(in_size)
+#         self.leaky_relu = nn.LeakyReLU(inplace=True)
+#         self.conv2d = nn.Conv2d(in_size, out_size, kernel_size=3, stride=1, padding=1, bias=False)
+#         self.dropout = nn.Dropout2d(p=drop_rate)
+
+#     def forward(self, x):
+#         out = self.batch_norm(x)
+#         out = self.leaky_relu(out)
+#         out = self.conv2d(out)
+#         out = self.dropout(out)
+#         return out
 
 class DenseLayer(nn.Module):
   def __init__(self, in_size, out_size, drop_rate=0.0):

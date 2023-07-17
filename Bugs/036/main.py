@@ -1,9 +1,10 @@
 from keras.applications import VGG16
 from keras.layers import Input, Dense, Flatten
 from keras.models import Model
+import random
 
-inp_img_h = 150
-inp_img_w = 150
+inp_img_h = random.randint(100, 200)
+inp_img_w = random.randint(100, 200)
 
 conv_base = VGG16(weights='imagenet',
               include_top=False,
