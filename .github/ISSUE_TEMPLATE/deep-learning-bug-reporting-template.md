@@ -1,12 +1,3 @@
----
-name: Deep Learning Bug Reporting Template
-about: This template will be used to report Deep Learning bugs.
-title: ''
-labels: bug
-assignees: ''
-
----
-
 # Deep Learning Bug Reporting Guidelines
 
 To ensure efficient bug reporting and faster resolution, please follow these guidelines when reporting a bug in your deep learning setup:
