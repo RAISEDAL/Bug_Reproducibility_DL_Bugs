@@ -50,4 +50,8 @@ Please include the following logs:
 -   **Evaluation Logs:** Include the results and metrics from evaluating the trained model on a separate validation or test dataset.
 -   **Compiler Error Logs:** If you encountered any errors during code compilation or execution, please provide the specific error messages and relevant parts of the code where the errors occurred.
 
-By following these guidelines and providing detailed information, you will help us identify and resolve the bug more effectively. Thank you for your cooperation!
+Additionally, to facilitate the bug investigation and help us reproduce your issue, please consider including a minimal reproducible example (MRE) of your code. A [MRE](https://stackoverflow.com/help/minimal-reproducible-example) is a simplified version of your deep learning setup that demonstrates the problem you encountered. By providing an MRE, our team can quickly isolate and understand the bug, leading to faster resolution.
+
+When creating the MRE, focus on including only the essential components needed to reproduce the issue. Remove any unnecessary code or data that does not contribute to the bug. This will ensure that the problem is clear and easy to analyze.
+
+Please include the MRE and the other relevant information mentioned in the guidelines above. Your cooperation in providing a minimal reproducible example will greatly assist our efforts in resolving the bug. Thank you!
