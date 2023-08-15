@@ -13,3 +13,50 @@ Deep learning has made remarkable progress in various sectors in recent years, s
   - `original_code_snippet.py`: Original code snippet from Stack Overflow.
   - Output files: Logs containing output information.
   - `requirements.txt` file is generated to facilitate the installation of necessary dependencies for each specific bug.
+
+### System Requirements
+- **Operating System:** Windows 10 or higher
+- **Python Version:** 3.10
+- **Disk Space:** ~3.5 GB
+- **Development Environment:** Visual Studio Code (VS Code)
+- **RAM:** 16GB
+- **GPU:** N/A
+
+### Installation Instructions
+
+To replicate the work, follow these steps:
+
+#### Step 1: Setting Up the Virtual Environment
+1. Create a virtual environment using the following command:
+    ```shell
+    python -m venv venv
+    ```
+
+#### Step 2: Installing Dependencies
+1. After creating the virtual environment, activate it by following the instructions [here](https://docs.python.org/3/library/venv.html).
+2. Install the necessary dependencies for the required bug:
+    ```shell
+    cd Bugs/<BugID>
+    pip install -r requirements.txt
+    ```
+####  Bug Reproduction
+After installing the dependencies, run the following command to reproduce the bug
+```shell
+python main.py &> output.txt
+```
+This ensures that the code to reproduce the bug is run and the results are stored in the output file. To check the original bug report, go to the `BugReproducibility_FSE24.xlsx` and find the Stack Overflow Post of the corresponding Bug ID. This will help you verify the output of the reproduced bug and the original error message.
+
+#### Analysis
+To analyze the results, and run the code for Apriori implementation, go to the respective Jupyter notebook in the Analysis folder and run the cells in the notebook sequentially.
+
+#### Licensing Information
+This project is licensed under the MIT License, a permissive open-source license that allows others to use, modify, and distribute the project's code with very few restrictions. This license can benefit research by promoting collaboration and encouraging the sharing of ideas and knowledge. With this license, researchers can build on existing code to create new tools, experiments, or projects, and easily adapt and customize the code to suit their specific research needs without worrying about legal implications. The open-source nature of the MIT License can help foster a collaborative research community, leading to faster innovation and progress in their respective fields. Additionally, the license can help increase the visibility and adoption of the project, attracting more researchers to use and contribute to it.
+
+#### Acknowledgment & References
+
+During the implementation of our study, we have referred to the following papers:
+
+Papers:
+1. Mondal et al., “Can Issues Reported at Stack Overflow Questions be Reproduced? An Exploratory Study”, MSR19
+2. Rahman et al., “Why are Some Bugs Non-Reproducible?: An Empirical Investigation using Data Fusion”, ICSME20
+4. Moravati et al., “Bugs in machine learning-based systems: a faultload benchmark”, EMSE23
