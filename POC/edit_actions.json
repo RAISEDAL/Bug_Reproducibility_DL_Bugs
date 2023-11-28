@@ -1,0 +1,30 @@
+{
+    "model": [
+      "Neural Network Definition",
+      "Import Addition",
+      "Hyperparameter Initialization",
+      "Logging",
+      "Dataset Procurement"
+    ],
+    "tensor": [
+        "Import Addition",
+        "Input Data Generation",
+        "Hyperparameter Initialization",
+        "Dataset Procurement",
+        "Logging"
+    ],
+    "training": [
+        "Input Data Generation",
+        "Import Addition",
+        "Version Migration",
+        "Hyperparameter Initialization",
+        "Compiler Error Resolution"
+    ],
+    "api": [
+        "Input Data Generation",
+        "Hyperparameter Initialization",
+        "Import Addition",
+        "Logging",
+        "Obsolete Parameter Removal"
+    ]
+  }
