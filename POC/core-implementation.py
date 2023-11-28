@@ -3,7 +3,7 @@ import json
 from sentence_transformers import SentenceTransformer, util
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-url = "https://api.stackexchange.com/2.3/questions/50920908?order=desc&sort=activity&site=stackoverflow&key=vc5m5jBpRA2Rw0HanS2XsA(("
+url = "https://api.stackexchange.com/2.3/questions/{id}?order=desc&sort=activity&site=stackoverflow&key=vc5m5jBpRA2Rw0HanS2XsA(("
 
 with open('tags.json') as f:
     tags = json.load(f)
@@ -13,8 +13,9 @@ with open('critical_information.json') as f:
 
 with open('edit_actions.json') as f:
     edit_actions = json.load(f)
-# print ('Enter the question ID:')
-# id = input()
+
+print ('Enter the question ID:')
+id = input()
 
 response = requests.get(url.format(id=id))
 
