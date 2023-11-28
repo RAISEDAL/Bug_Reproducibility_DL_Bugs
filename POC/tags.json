@@ -1,0 +1,37 @@
+{
+    "model": [
+      "layer",
+      "model",
+      "activation-function"
+    ],
+    "tensor": [
+      "tensor"
+    ],
+    "training": [
+      "loss-function",
+      "training-data",
+      "optimization",
+      "loss",
+      "data-augmentation",
+      "performance",
+      "learning-rate",
+      "hyperparameters",
+      "initialization",
+      "imbalanced-data",
+      "nan"
+    ],
+    "gpu": [
+      "gpu",
+      "nvidia",
+      "cuda"
+    ],
+    "api": [
+      "typeerror",
+      "valueerror",
+      "attributeerror",
+      "importerror",
+      "compilererrors",
+      "syntaxerror",
+      "modulenotfounderror"
+    ]
+  }

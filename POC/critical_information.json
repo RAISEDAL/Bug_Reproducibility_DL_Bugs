@@ -1,0 +1,22 @@
+{
+    "model": [
+      "Logs",
+      "Neural Network",
+      "Code Snippet"
+    ],
+    "tensor": [
+      "Data",
+      "Logs",
+      "Code Snippet"
+    ],
+    "training": [
+        "Code Snippet",
+        "Logs",
+        "Data"
+    ],
+    "api": [
+        "Logs",
+        "Code Snippet",
+        "Model"
+    ]
+  }
