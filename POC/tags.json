@@ -20,11 +20,6 @@
       "imbalanced-data",
       "nan"
     ],
-    "gpu": [
-      "gpu",
-      "nvidia",
-      "cuda"
-    ],
     "api": [
       "typeerror",
       "valueerror",

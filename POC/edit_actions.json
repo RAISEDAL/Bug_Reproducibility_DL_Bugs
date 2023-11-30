@@ -1,30 +1,30 @@
 {
     "model": [
-      "Neural Network Definition",
-      "Import Addition",
-      "Hyperparameter Initialization",
-      "Logging",
-      "Dataset Procurement"
+      "**Neural Network Definition**: Build neural network models codebased on architecture details provided in reports, using common layers.",
+      "**Import Addition**: Inspect code errors to identify missing imports/modules and install required libraries.",
+      "**Hyperparameter Initialization**: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
+      "**Logging**: Insert print or logging statements after key operations to output intermediate values.",
+      "**Dataset Procurement**: Lookup links to referenced public datasets and integrate dataloader code."
     ],
     "tensor": [
-        "Import Addition",
-        "Input Data Generation",
-        "Hyperparameter Initialization",
-        "Dataset Procurement",
-        "Logging"
+        "**Import Addition**: Inspect code errors to identify missing imports/modules and install required libraries.",
+        "**Input Data Generation**: Simulate training data characteristics mentioned in reports by generating random data matching shapes and value ranges.",
+        "**Hyperparameter Initialization**: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
+        "**Dataset Procurement**: Lookup links to referenced public datasets and integrate dataloader code.",
+        "**Logging**: Insert print or logging statements after key operations to output intermediate values."
     ],
     "training": [
-        "Input Data Generation",
-        "Import Addition",
-        "Version Migration",
-        "Hyperparameter Initialization",
-        "Compiler Error Resolution"
+        "**Input Data Generation**: Simulate training data characteristics mentioned in reports by generating random data matching shapes and value ranges.",
+        "**Import Addition**: Inspect code errors to identify missing imports/modules and install required libraries.",
+        "**Version Migration**: Update code to follow newest library examples and warnings for deprecated functions.",
+        "**Hyperparameter Initialization**: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
+        "**Compiler Error Resolution**: Debug errors by adding temporary values for undefined variables preventing execution."
     ],
     "api": [
-        "Input Data Generation",
-        "Hyperparameter Initialization",
-        "Import Addition",
-        "Logging",
-        "Obsolete Parameter Removal"
+        "**Input Data Generation**: Simulate training data characteristics mentioned in reports by generating random data matching shapes and value ranges.",
+        "**Hyperparameter Initialization**: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
+        "**Import Addition**: Inspect code errors to identify missing imports/modules and install required libraries.",
+        "**Logging**: Insert print or logging statements after key operations to output intermediate values.",
+        "**Obsolete Parameter Removal**: Check library release notes for deprecated parameters and remove unused ones from code."
     ]
   }
