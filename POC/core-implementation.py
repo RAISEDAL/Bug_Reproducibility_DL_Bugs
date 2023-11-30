@@ -2,22 +2,17 @@ import streamlit as st
 import requests
 import json
 from sentence_transformers import SentenceTransformer, util
-
-import streamlit as st
-import requests
-import json
-from sentence_transformers import SentenceTransformer, util
-
+import pandas as pd
+st.set_page_config(layout="wide")
 
 def main():
     st.title("DLRepro: Improving the Reproducibility of Deep Learning Bugs")
-
-    # Add navigation to the sidebar
-    page = st.sidebar.selectbox(
+    page = st.radio(
         "Select a page",
         [
-            "Our findings on Deep Learning Bug Reproducibility",
             "Edit Actions Recommender",
+            "Our findings on Deep Learning Bug Reproducibility",
+            "Implementing the Edit Actions"
         ],
     )
 
@@ -25,13 +20,15 @@ def main():
         home_page()
     elif page == "Edit Actions Recommender":
         recommendation_page()
-
+    elif page == "Implementing the Edit Actions":
+        implementation_page()
 
 def home_page():
-    st.write("Our findings on Deep Learning Bug Reproducibility")
-
     st.header(
-        "Relationship between Critical Information and Types of Deep Learning Bugs"
+        "Relationship between Critical Information and Type of Bug"
+    )
+    st.markdown(
+        "This table illustrates the critical information needed to reproduce specific types of deep learning bugs."
     )
     critical_information_table_data = {
         "Model": ["Logs", "Neural Network", "Code Snippet"],
@@ -39,32 +36,37 @@ def home_page():
         "Training": ["Code Snippet", "Logs", "Data"],
         "API": ["Logs", "Code Snippet", "Model"],
     }
-    st.table(critical_information_table_data)
+    critical_information_df = pd.DataFrame(critical_information_table_data)
+    st.dataframe(critical_information_df, hide_index=True)
+    st.caption("Table 1: Relationship between Critical Information and Types of Deep Learning Bugs")
 
     st.header("Relationship between Edit Actions and Type of Bug")
+    st.markdown(
+        "This table demonstrates the different of edit actions that can be used to reproduce specifc types of deep learning bugs."
+    )
     edit_actions_table_data = {
-        "model": [
+        "Model": [
             "Neural Network Definition",
             "Import Addition",
             "Hyperparameter Initialization",
             "Logging",
             "Dataset Procurement",
         ],
-        "tensor": [
+        "Tensor": [
             "Import Addition",
             "Input Data Generation",
             "Hyperparameter Initialization",
             "Dataset Procurement",
             "Logging",
         ],
-        "training": [
+        "Training": [
             "Input Data Generation",
             "Import Addition",
             "Version Migration",
             "Hyperparameter Initialization",
             "Compiler Error Resolution",
         ],
-        "api": [
+        "API": [
             "Input Data Generation",
             "Hyperparameter Initialization",
             "Import Addition",
@@ -72,11 +74,11 @@ def home_page():
             "Obsolete Parameter Removal",
         ],
     }
-    st.table(edit_actions_table_data)
-
+    edit_actions_df = pd.DataFrame(edit_actions_table_data)
+    st.dataframe(edit_actions_df, hide_index=True)
+    st.caption("Table 2: Relationship between Edit Actions and Type of Deep Learning Bug")
 
 def recommendation_page():
-    st.write("Edit Actions Recommender")
 
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -91,7 +93,7 @@ def recommendation_page():
         edit_actions = json.load(f)
 
     # Get question ID from user input
-    id = st.text_input("Enter the question ID:")
+    id = st.text_input("Enter the Stack Overflow question ID: (e.g., 50920908)")
 
     # Process the question
     if st.button("Recommend Edit Actions and Critical Information"):
@@ -99,60 +101,85 @@ def recommendation_page():
 
 
 def classify_bug(id, tags, model, critical_information, edit_actions):
-    url = f"https://api.stackexchange.com/2.3/questions/{id}?order=desc&sort=activity&site=stackoverflow&key=vc5m5jBpRA2Rw0HanS2XsA(("
+    with st.spinner("Retrieving the Stack Overflow Data"):
+        url = f"https://api.stackexchange.com/2.3/questions/{id}?order=desc&sort=activity&site=stackoverflow&key=vc5m5jBpRA2Rw0HanS2XsA(("
 
-    response = requests.get(url.format(id=id))
+        response = requests.get(url.format(id=id))
+        response_object = response.json()
+        question_tags = response_object["items"][0]["tags"]
 
-    response_object = response.json()
-    question_tags = response_object["items"][0]["tags"]
-
-    type_of_bug = "-"
-    tag_to_bug_type = {
-        "model": "model",
-        "training": "training",
-        "api": "data",
-        "tensor": "tensor",
-        "gpu": "gpu",
-    }
-    exact_match_found = True
-
-    for tag in question_tags:
-        for bug_type, bug_tags in tags.items():
-            if tag in bug_tags:
-                type_of_bug = tag_to_bug_type[bug_type]
-                break
-
-    if type_of_bug == "-":
-        exact_match_found = False
-        tag_embeddings = {
-            "model": model.encode(tags["model"]),
-            "training": model.encode(tags["training"]),
-            "api": model.encode(tags["api"]),
-            "tensor": model.encode(tags["tensor"]),
-            "gpu": model.encode(tags["gpu"]),
+        type_of_bug = "-"
+        tag_to_bug_type = {
+            "model": "model",
+            "training": "training",
+            "api": "api",
+            "tensor": "tensor"
         }
-        scores = {
-            tag: util.pytorch_cos_sim(model.encode(question_tags), embedding)
-            for tag, embedding in tag_embeddings.items()
-        }
-        type_of_bug = max(scores, key=lambda x: scores[x].max())
+        exact_match_found = True
+        with st.spinner("Determining the Type of Bug"):
+            for tag in question_tags:
+                for bug_type, bug_tags in tags.items():
+                    if tag in bug_tags:
+                        type_of_bug = tag_to_bug_type[bug_type]
+                        break
 
-    result_text = ""
-    if exact_match_found:
-        result_text += f"The type of bug is: {type_of_bug.capitalize()}"
-    else:
-        result_text += f"The type of bug might be: {type_of_bug.capitalize()}"
+            if type_of_bug == "-":
+                exact_match_found = False
+                tag_embeddings = {
+                    "model": model.encode(tags["model"]),
+                    "training": model.encode(tags["training"]),
+                    "api": model.encode(tags["api"]),
+                    "tensor": model.encode(tags["tensor"]),
+                }
+                scores = {
+                    tag: util.pytorch_cos_sim(model.encode(question_tags), embedding)
+                    for tag, embedding in tag_embeddings.items()
+                }
+                type_of_bug = max(scores, key=lambda x: scores[x].max())
 
-    result_text += "\n\nTo reproduce the bug, the most critical information needed is:"
-    for info in critical_information[type_of_bug]:
-        result_text += f"\n- {info}"
+        with st.spinner("Preparing the Recommendations"):
+            result_text = ""
+            if exact_match_found:
+                result_text += f"The type of bug is: **{type_of_bug.capitalize() if type_of_bug != 'api' else 'API'}**"
+            else:
+                result_text += f"The type of bug might be: **{type_of_bug.capitalize() if type_of_bug != 'api' else 'API'}**"
 
-    result_text += "\n\nTo reproduce the bug, we can use the following edit actions:"
-    for action in edit_actions[type_of_bug]:
-        result_text += f"\n- {action}"
+            result_text += "\n\nTo reproduce the bug, the most critical information needed is:"
+            for info in critical_information[type_of_bug]:
+                result_text += f"\n- {info}"
 
-    st.text(result_text)
+            result_text += "\n\nTo reproduce the bug, we can use the following edit actions:"
+            for action in edit_actions[type_of_bug]:
+                result_text += f"\n- {action}"
+        st.markdown(result_text)
+        st.markdown("**To learn more about the implementation of these edit actions, you can check out the page titled 'Implementing the Edit Actions'**")
 
+def implementation_page():
+    st.title("Implementing the Edit Actions")
+
+    st.header('Input Data Generation')
+    st.code("""
+# Generating an Identity Matrix (3x3)
+identity_matrix = np.eye(3)
+
+# Generating an Array of Ones (2x4)
+ones_array = np.ones((2, 4))
+
+# Generating an Array of Zeros (3x2)
+zeros_array = np.zeros((3, 2))
+
+# Generating Random Data with Normal Distribution (2x3)
+mean = 0
+std_dev = 1
+shape = (2, 3)
+random_data = np.random.normal(mean, std_dev, shape)
+
+# Generating Random Integers (3x3)
+random_integers = np.random.randint(1, 10, (3, 3))
+
+# Generating Random Data from a Uniform Distribution (2x2)
+random_uniform_data = np.random.uniform(0, 1, (2, 2))
+""")
 
 if __name__ == "__main__":
     main()
