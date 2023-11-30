@@ -155,31 +155,7 @@ def classify_bug(id, tags, model, critical_information, edit_actions):
         st.markdown("**To learn more about the implementation of these edit actions, you can check out the page titled 'Implementing the Edit Actions'**")
 
 def implementation_page():
-    st.title("Implementing the Edit Actions")
-
-    st.header('Input Data Generation')
-    st.code("""
-# Generating an Identity Matrix (3x3)
-identity_matrix = np.eye(3)
-
-# Generating an Array of Ones (2x4)
-ones_array = np.ones((2, 4))
-
-# Generating an Array of Zeros (3x2)
-zeros_array = np.zeros((3, 2))
-
-# Generating Random Data with Normal Distribution (2x3)
-mean = 0
-std_dev = 1
-shape = (2, 3)
-random_data = np.random.normal(mean, std_dev, shape)
-
-# Generating Random Integers (3x3)
-random_integers = np.random.randint(1, 10, (3, 3))
-
-# Generating Random Data from a Uniform Distribution (2x2)
-random_uniform_data = np.random.uniform(0, 1, (2, 2))
-""")
+   st.title('Implementation of Edit Actions')
 
 if __name__ == "__main__":
     main()
