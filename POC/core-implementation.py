@@ -83,13 +83,13 @@ def recommendation_page():
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
     # Load data
-    with open("tags.json") as f:
+    with open("./tags.json") as f:
         tags = json.load(f)
 
-    with open("critical_information.json") as f:
+    with open("./critical_information.json") as f:
         critical_information = json.load(f)
 
-    with open("edit_actions.json") as f:
+    with open("./edit_actions.json") as f:
         edit_actions = json.load(f)
 
     # Get question ID from user input
