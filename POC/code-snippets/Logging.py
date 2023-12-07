@@ -1,4 +1,5 @@
 import numpy as np
+import keras
 
 random_uniform_data = np.random.uniform(0, 1, (2, 2))
 print (random_uniform_data.shape)
