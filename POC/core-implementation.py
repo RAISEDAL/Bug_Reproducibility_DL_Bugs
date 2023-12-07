@@ -12,7 +12,6 @@ def main():
         [
             "Edit Actions Recommender",
             "Our findings on Deep Learning Bug Reproducibility",
-            "Implementing the Edit Actions"
         ],
     )
 
@@ -20,8 +19,6 @@ def main():
         home_page()
     elif page == "Edit Actions Recommender":
         recommendation_page()
-    elif page == "Implementing the Edit Actions":
-        implementation_page()
 
 def home_page():
     st.header(
@@ -136,26 +133,32 @@ def classify_bug(id, tags, model, critical_information, edit_actions):
                     for tag, embedding in tag_embeddings.items()
                 }
                 type_of_bug = max(scores, key=lambda x: scores[x].max())
-
+        type_of_bug = type_of_bug.capitalize() if type_of_bug != 'api' else 'API'
         with st.spinner("Preparing the Recommendations"):
             result_text = ""
             if exact_match_found:
-                result_text += f"The type of bug is: **{type_of_bug.capitalize() if type_of_bug != 'api' else 'API'}**"
+                result_text += f"The type of bug is: **{type_of_bug}**"
             else:
-                result_text += f"The type of bug might be: **{type_of_bug.capitalize() if type_of_bug != 'api' else 'API'}**"
+                result_text += f"The type of bug might be: **{type_of_bug}**"
+            st.markdown(result_text)
 
-            result_text += "\n\nTo reproduce the bug, the most critical information needed is:"
+            # Instead of appending it as a text, I want it to be st.expander()
+            result_text = "\n\nTo reproduce the bug, the most critical information needed is:"
+            st.markdown(result_text)
             for info in critical_information[type_of_bug]:
-                result_text += f"\n- {info}"
+                expander = st.expander("**{}**".format(info.split(":")[0]))
+                expander.write("{}".format(info.split(":")[1]))
 
-            result_text += "\n\nTo reproduce the bug, we can use the following edit actions:"
+            result_text = "\n\nTo reproduce the bug, we can use the following edit actions:"
+            st.markdown(result_text)
             for action in edit_actions[type_of_bug]:
-                result_text += f"\n- {action}"
-        st.markdown(result_text)
-        st.markdown("**To learn more about the implementation of these edit actions, you can check out the page titled 'Implementing the Edit Actions'**")
-
-def implementation_page():
-   st.title('Implementation of Edit Actions')
+                expander = st.expander("**{}**".format(action.split(":")[0]))
+                expander.write("{}".format(action.split(":")[1]))
+                edit_action = action.split(":")[0]
+                if edit_action in ["Hyperparameter Initialization", "Input Data Generation", "Logging", "Neural Network Definition", "Version Migration"]:
+                    file = open("./code-snippets/{}.py".format(edit_action), "r")
+                    code = file.read()
+                    expander.code(code, language="python")
 
 if __name__ == "__main__":
     main()
