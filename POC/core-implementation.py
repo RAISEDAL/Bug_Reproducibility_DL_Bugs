@@ -113,52 +113,62 @@ def classify_bug(id, tags, model, critical_information, edit_actions):
             "tensor": "tensor"
         }
         exact_match_found = True
-        with st.spinner("Determining the Type of Bug"):
-            for tag in question_tags:
-                for bug_type, bug_tags in tags.items():
-                    if tag in bug_tags:
-                        type_of_bug = tag_to_bug_type[bug_type]
-                        break
+        # Check if all the tags are frameworks, if, yes, throw an error
+        dl_frameworks = ["tensorflow", "pytorch", "keras", "caffe", "mxnet", "theano", "python"]
+        are_all_dl_frameworks = True
+        for tag in question_tags:
+            if tag not in dl_frameworks:
+                are_all_dl_frameworks = False
+                break
+        if are_all_dl_frameworks: 
+            st.error("Sufficient tags not found for the given question ID. Please update the question tags.")
+        else:
+            with st.spinner("Determining the Type of Bug"):
+                for tag in question_tags:
+                    for bug_type, bug_tags in tags.items():
+                        if tag in bug_tags:
+                            type_of_bug = tag_to_bug_type[bug_type]
+                            break
 
-            if type_of_bug == "-":
-                exact_match_found = False
-                tag_embeddings = {
-                    "model": model.encode(tags["model"]),
-                    "training": model.encode(tags["training"]),
-                    "api": model.encode(tags["api"]),
-                    "tensor": model.encode(tags["tensor"]),
-                }
-                scores = {
-                    tag: util.pytorch_cos_sim(model.encode(question_tags), embedding)
-                    for tag, embedding in tag_embeddings.items()
-                }
-                type_of_bug = max(scores, key=lambda x: scores[x].max())
-        type_of_bug = type_of_bug.capitalize() if type_of_bug != 'api' else 'API'
-        with st.spinner("Preparing the Recommendations"):
-            result_text = ""
-            if exact_match_found:
-                result_text += f"The type of bug is: **{type_of_bug}**"
-            else:
-                result_text += f"The type of bug might be: **{type_of_bug}**"
-            st.markdown(result_text)
+                if type_of_bug == "-":
+                    exact_match_found = False
+                    tag_embeddings = {
+                        "model": model.encode(tags["model"]),
+                        "training": model.encode(tags["training"]),
+                        "api": model.encode(tags["api"]),
+                        "tensor": model.encode(tags["tensor"]),
+                    }
+                    scores = {
+                        tag: util.pytorch_cos_sim(model.encode(question_tags), embedding)
+                        for tag, embedding in tag_embeddings.items()
+                    }
+                    type_of_bug = max(scores, key=lambda x: scores[x].max())
+            type_of_bug = type_of_bug.capitalize() if type_of_bug != 'api' else 'API'
+            with st.spinner("Preparing the Recommendations"):
+                result_text = ""
+                if exact_match_found:
+                    result_text += f"The type of bug is: **{type_of_bug}**"
+                else:
+                    result_text += f"The type of bug might be: **{type_of_bug}**"
+                st.markdown(result_text)
 
-            # Instead of appending it as a text, I want it to be st.expander()
-            result_text = "\n\nTo reproduce the bug, the most critical information needed is:"
-            st.markdown(result_text)
-            for info in critical_information[type_of_bug]:
-                expander = st.expander("**{}**".format(info.split(":")[0]))
-                expander.write("{}".format(info.split(":")[1]))
+                # Instead of appending it as a text, I want it to be st.expander()
+                result_text = "\n\nTo reproduce the bug, the most critical information needed is:"
+                st.markdown(result_text)
+                for info in critical_information[type_of_bug]:
+                    expander = st.expander("**{}**".format(info.split(":")[0]))
+                    expander.write("{}".format(info.split(":")[1]))
 
-            result_text = "\n\nTo reproduce the bug, we can use the following edit actions:"
-            st.markdown(result_text)
-            for action in edit_actions[type_of_bug]:
-                expander = st.expander("**{}**".format(action.split(":")[0]))
-                expander.write("{}".format(action.split(":")[1]))
-                edit_action = action.split(":")[0]
-                if edit_action in ["Hyperparameter Initialization", "Input Data Generation", "Logging", "Neural Network Definition", "Version Migration"]:
-                    file = open("./code-snippets/{}.py".format(edit_action), "r")
-                    code = file.read()
-                    expander.code(code, language="python")
+                result_text = "\n\nTo reproduce the bug, we can use the following edit actions:"
+                st.markdown(result_text)
+                for action in edit_actions[type_of_bug]:
+                    expander = st.expander("**{}**".format(action.split(":")[0]))
+                    expander.write("{}".format(action.split(":")[1]))
+                    edit_action = action.split(":")[0]
+                    if edit_action in ["Hyperparameter Initialization", "Input Data Generation", "Logging", "Neural Network Definition", "Version Migration"]:
+                        file = open("./code-snippets/{}.py".format(edit_action), "r")
+                        code = file.read()
+                        expander.code(code, language="python")
 
 if __name__ == "__main__":
     main()
