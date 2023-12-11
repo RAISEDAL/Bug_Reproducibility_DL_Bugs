@@ -1,19 +1,19 @@
 {
-    "model": [
+    "Model": [
       "Neural Network Definition: Build neural network models codebased on architecture details provided in reports, using common layers.\n For example, In one of the Stack Overflow question, it was mentioned that 'I am trying to write a simple multinomial logistic regression using mnist data'. So, using this information, we generate multiple regression models as following",
       "Import Addition: Inspect code errors to identify missing imports/modules and install required libraries.",
       "Hyperparameter Initialization: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
       "Logging: To facilitate logging, we either print the runtime values of various variables to verify the reproducibility of the bug or print the shape of the data or the summary of the neural network to ensure that we have set up the structure correctly and successfully reproduced the bug.",
       "Dataset Procurement: Lookup links to referenced public datasets and integrate dataloader code.\nIn some scenarios, we can use famous datasets such as MNIST and Iris to reproduce the bug. These datasets can sometimes be obtained by using code operations, as shown below.\nAdditionally, we might need to download the dataset from well-known sources such as Kaggle, or the dataset's original source. \nFor example, Iris dataset can also be downloaded using the source (https://archive.ics.uci.edu/dataset/53/iris)."
     ],
-    "tensor": [
+    "Tensor": [
         "Import Addition: Inspect code errors to identify missing imports/modules and install required libraries.",
         "Input Data Generation: Simulate training data characteristics mentioned in reports by generating random data matching shapes and value ranges.",
         "Hyperparameter Initialization: Set uninitialized hyperparameters like epochs and batch size to commonly used defaults like 10-100 epochs",
         "Dataset Procurement: Lookup links to referenced public datasets and integrate dataloader code.",
         "Logging: To facilitate logging, we either print the runtime values of various variables to verify the reproducibility of the bug or print the shape of the data or the summary of the neural network to ensure that we have set up the structure correctly and successfully reproduced the bug."
     ],
-    "training": [
+    "Training": [
         "Input Data Generation: Simulate training data characteristics mentioned in reports by generating random data matching shapes and value ranges.",
         "Import Addition: Inspect code errors to identify missing imports/modules and install required libraries.",
         "Version Migration: This edit action is used when we have to port the code from one framework version to another. In the example given below, the first cell of code is written using Tensorflow v1, and is incompatible with Tensorflow v2. So, in order to make the code compilable, we rewrite it using Tensorflow v2, as demonstrated in the second cell.",
