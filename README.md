@@ -3,11 +3,19 @@
 This repository is the replication package for the project "Enhancing the Reproducibility of Deep Learning Bugs: An Empirical Study". This study is conducted under the supervision and guidance of Dr. Masud Rahman and Dr. Foutse Khomh.
 
 ### Abstract
-Deep learning has made remarkable progress in various sectors in recent years, significantly impacting people's daily lives. It has revolutionized healthcare, autonomous vehicles, and cybersecurity. However, like typical software systems, deep learning systems are susceptible to bugs, some of which can have a severe impact, as evidenced by fatal incidents involving Tesla's Autopilot technology. Despite the substantial advancements in deep learning techniques, little research has focused on the problem of reproducing bugs in these systems. This lack of attention is concerning, as non-reproducible bugs can hinder bug-fixing. Existing literature suggests that only 3% of machine learning and deep learning bugs are reproducible, underscoring the need for further research to tackle this issue. In this project, we thus conduct an empirical study focusing on the reproducibility of bugs in deep learning systems. Firstly, we constructed a dataset of different types of deep-learning bugs from Stack Overflow posts. This dataset comprises 123 Model, 204 Tensor, 103 Training, 110 GPU and 28 API Bugs. Secondly, we determined the reproducibility status of these bugs (e.g., reproducible, non-reproducible) by attempting to reproduce them using the bug descriptions, source code, and complementary information. During reproduction, we identify editing actions that can reproduce deep learning bugs and the critical information in bug reports that makes these bugs reproducible. Finally, we identify the edit actions required for reproducing specific types of deep learning bugs using the Apriori algorithm. In this paper, we successfully reproduce 85 deep learning bugs and identify 10 edit actions that can be used to reproduce the deep learning bugs. Furthermore, we identify the critical edit operations for different categories of deep learning bugs and the critical information in bug reports which helps the reproducibility of these bugs. Thus, our findings offer important insights for future research targeting the reproducibility of bugs in deep learning systems.
+**Context:** Deep learning has achieved remarkable progress in various domains. However, like any software system, deep learning systems contain bugs, some of which can have severe impacts, as evidenced by crashes involving autonomous vehicles. Despite substantial advancements in deep learning techniques, little research has focused on reproducing deep learning bugs, which hinders resolving them. Existing literature suggests that only 3\% of machine/deep learning bugs are reproducible, underscoring the need for further research.
+
+**Objective:** This paper examines the reproducibility of deep learning bugs. We identify edit actions and useful information that could improve deep learning bug reproducibility.
+
+**Method:** First, we construct a dataset of 668 deep learning bugs from Stack Overflow and Defects4ML across three frameworks and 22 architectures. Second, out of the 668 bugs, we select 102 bugs using stratified sampling and try to determine their reproducibility. While reproducing these bugs, we identify edit actions and useful information necessary for their reproduction. Third, we used the Apriori algorithm to identify useful information and edit actions required to reproduce specific bug types. Finally, we conduct a user study with 22 developers to assess the effectiveness of our findings in real-life settings. 
+
+**Results:** We successfully reproduced 85 out of 102 bugs attempted. We identified ten edit actions and five useful information categories that can help us reproduce the deep learning bugs. Our findings improved bug reproducibility by 22.92\% and reduced reproduction time by 24.35\% based on a user study with 22 developers.
+
+**Conclusions:** Our research addresses the critical issue of deep learning bug reproducibility. Practitioners and researchers can leverage our findings to improve deep learning bug reproducibility.
 
 ### Materials Included
 * Analysis Folder: This folder contains Jupyter notebooks focused on dataset analysis. The notebooks include code for implementing the Apriori algorithm, which is used to identify critical edit actions. These actions are essential for gathering the necessary information required to reproduce bugs.
-* Dataset Folder: Within this directory, you'll find various datasets, including those for PyTorch, TensorFlow (TF), and Keras Posts. The folder also contains queries used to filter the data and retrieve specific posts. Additionally, reproducibility results are included, along with corresponding edit actions and vital bug report details.
+* Dataset Folder: Within this directory, you'll find various datasets, including those for PyTorch, TensorFlow (TF), and Keras Posts. The folder also contains queries used to filter the data and retrieve specific posts. Additionally, reproducibility results are included, along with corresponding edit actions and vital bug report details. Finally, this folder also contains the results for the user study conducted as a part of the third research question.
 * Bugs Folder In this folder, a collection of bugs is organized, alongside their original code snippets sourced from Stack Overflow. Completed code snippets associated with each bug are also provided. Each specific bug folder contains the following elements:
   - `main.py`: Finalized code snippet.
   - `original_code_snippet.py`: Original code snippet from Stack Overflow.
@@ -44,7 +52,7 @@ After installing the dependencies, run the following command to reproduce the bu
 ```shell
 python main.py &> output.txt
 ```
-This ensures that the code to reproduce the bug is run and the results are stored in the output file. To check the original bug report, go to the `BugReproducibility_FSE24.xlsx` and find the Stack Overflow Post of the corresponding Bug ID. This will help you verify the output of the reproduced bug and the original error message.
+This ensures that the code to reproduce the bug is run, and the results are stored in the output file. To check the original bug report, go to the `Dataset_Manual_Reproduction.csv` and find the Stack Overflow Post of the corresponding Bug ID. This will help you verify the output of the reproduced bug and the original error message.
 
 
 ### Bug Reproduction - All Bugs
@@ -55,7 +63,7 @@ python script.py
 ```
 
 ### Analysis
-To analyze the results, and run the code for Apriori implementation, go to the respective Jupyter notebook in the Analysis folder and run the cells in the notebook sequentially.
+To analyze the results and run the code for Apriori implementation, go to the respective Jupyter notebook in the Analysis folder and run the cells in the notebook sequentially.
 
 ### Licensing Information
 This project is licensed under the MIT License, a permissive open-source license that allows others to use, modify, and distribute the project's code with very few restrictions. This license can benefit research by promoting collaboration and encouraging the sharing of ideas and knowledge. With this license, researchers can build on existing code to create new tools, experiments, or projects, and easily adapt and customize the code to suit their specific research needs without worrying about legal implications. The open-source nature of the MIT License can help foster a collaborative research community, leading to faster innovation and progress in their respective fields. Additionally, the license can help increase the visibility and adoption of the project, attracting more researchers to use and contribute to it.
